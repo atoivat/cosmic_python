@@ -1,5 +1,5 @@
 # Example application code for the python architecture book
-> This repository its just to keep track of what I ([atoivat]()) have already done while reading the book. For the code examples and exercises, check the [oficial repository](https://github.com/cosmicpython/code).
+> This repository its just to keep track of what I ([atoivat](https://github.com/atoivat)) have already done while reading the book. For the code examples and exercises, check the [oficial repository](https://github.com/cosmicpython/code).
 ## Chapters
 
 Each chapter has its own branch which contains all the commits for that chapter,
