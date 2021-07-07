@@ -1,2 +1,10 @@
-SQLAlchemy==1.4.19
-pytest==6.2.4
+# app
+sqlalchemy
+flask
+psycopg2-binary
+
+# tests
+pytest
+pytest-icdiff
+mypy
+requests
