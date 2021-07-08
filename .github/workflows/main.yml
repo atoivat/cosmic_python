@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  docker:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup
+      uses: make build
+    
+    - name: Test
+      uses: make test
+
+    - name: Teardown
+      uses: make down
+
