@@ -6,12 +6,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
     - name: Setup
       run: docker-compose build
-    
     - name: Test
       run: docker-compose run --rm --no-deps --entrypoint=pytest app /tests/unit /tests/integration /tests/e2e
-
     - name: Teardown
       run: docker-compose down --remove-orphans
 
