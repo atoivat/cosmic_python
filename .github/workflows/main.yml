@@ -7,11 +7,11 @@ jobs:
 
     steps:
     - name: Setup
-      uses: make build
+      run: make build
     
     - name: Test
-      uses: make test
+      run: make test
 
     - name: Teardown
-      uses: make down
+      run: make down
 
