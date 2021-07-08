@@ -7,11 +7,11 @@ jobs:
 
     steps:
     - name: Setup
-      run: make build
+      run: sudo make build
     
     - name: Test
-      run: make test
+      run: sudo make test
 
     - name: Teardown
-      run: make down
+      run: sudo make down
 
