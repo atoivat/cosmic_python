@@ -7,12 +7,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup
+    - name: Build
       run: docker-compose build
     - name: Compose Up
       run: docker-compose up -d app
     - name: Test
       run: docker-compose run --rm --no-deps --entrypoint=pytest app /tests/unit /tests/integration /tests/e2e
-    - name: Teardown
+    - name: Compose Down
       run: docker-compose down --remove-orphans
 
